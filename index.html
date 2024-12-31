@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vocabh - Coming Soon</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- Primary Meta Tags -->
+        <title>Vocabh - Smart Vocabulary Learning App | Coming Soon</title>
+        <meta name="title" content="Vocabh - Smart Vocabulary Learning App | Coming Soon">
+        <meta name="description" content="Master languages effortlessly with Vocabh. Smart flashcards, personalized learning paths, and AI-powered vocabulary acquisition. Available soon on iOS and Android.">
+        <meta name="keywords" content="vocabulary app, language learning, flashcards, spaced repetition, learn languages, vocabulary builder, language learning app, educational app, memorization tool, smart flashcards, language study, vocabulary trainer, language learning software, mobile learning app, educational technology, language acquisition, vocabulary practice, language learning platform, digital flashcards, memory improvement">
+        <meta name="author" content="Vocabh">
+        <meta name="robots" content="index, follow">
+        <meta name="language" content="English">
+    
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://vocabh.com/">
+        <meta property="og:title" content="Vocabh - Revolutionary Language Learning App">
+        <meta property="og:description" content="Transform your language learning journey with Vocabh. Smart flashcards and personalized learning paths make vocabulary acquisition effortless.">
+        <meta property="og:image" content="https://vocabh.com/path-to-your-image.jpg">
+    
+        <!-- Twitter -->
+        <meta property="twitter:card" content="summary_large_image">
+        <meta property="twitter:url" content="https://vocabh.com/">
+        <meta property="twitter:title" content="Vocabh - Revolutionary Language Learning App">
+        <meta property="twitter:description" content="Transform your language learning journey with Vocabh. Smart flashcards and personalized learning paths make vocabulary acquisition effortless.">
+        <meta property="twitter:image" content="https://vocabh.com/path-to-your-image.jpg">
+    
+        <!-- Favicon -->
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+    
+        <!-- Canonical URL -->
+        <link rel="canonical" href="https://vocabh.com/">
+    
+        <!-- Fonts and Icons (existing) -->
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    
+        <!-- Schema.org markup for Google -->
+        <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "MobileApplication",
+            "name": "Vocabh",
+            "description": "Smart vocabulary learning app using flashcards and spaced repetition for efficient language acquisition.",
+            "operatingSystem": "iOS, Android",
+            "applicationCategory": "EducationalApplication",
+            "offers": {
+                "@type": "Offer",
+                "availability": "PreOrder",
+                "price": "0",
+                "priceCurrency": "USD"
+            },
+            "creator": {
+                "@type": "Organization",
+                "name": "Vocabh",
+                "url": "https://vocabh.com"
+            }
+        }
+        </script>
+    </head>
+    <style>
+        :root {
+            --primary-color: #947CD6;
+            --color-50: #F7F5FD;
+            --color-100: #F0EDFA;
+            --color-200: #E1DEF6;
+            --color-300: #CCC4EE;
+            --color-400: #B0A2E3;
+            --color-600: #7953C4;
+            --color-700: #724DB4;
+            --color-800: #5F4097;
+            --color-900: #4F367C;
+            --color-950: #312253;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, var(--color-50) 0%, white 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            overflow-x: hidden;
+        }
+
+        .navbar {
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--color-900);
+            text-decoration: none;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 15px;
+        }
+
+        .social-link {
+            width: 40px;
+            height: 40px;
+            border-radius: 20px;
+            background: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary-color);
+            text-decoration: none;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .social-link:hover {
+            transform: translateY(-3px);
+        }
+
+        .main-content {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            position: relative;
+        }
+
+        .content-wrapper {
+            text-align: center;
+            max-width: 600px;
+            z-index: 2;
+        }
+
+        .title {
+            font-size: 48px;
+            color: var(--color-900);
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .subtitle {
+            font-size: 18px;
+            color: var(--color-800);
+            margin-bottom: 40px;
+            line-height: 1.6;
+        }
+
+        .notify-form {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+            justify-content: center;
+        }
+
+        .email-input {
+            padding: 15px 25px;
+            border: 2px solid var(--color-200);
+            border-radius: 12px;
+            font-family: 'Poppins', sans-serif;
+            font-size: 16px;
+            width: 300px;
+            transition: border-color 0.3s ease;
+        }
+
+        .email-input:focus {
+            outline: none;
+            border-color: var(--primary-color);
+        }
+
+        .notify-btn {
+            padding: 15px 30px;
+            background: var(--primary-color);
+            color: white;
+            border: none;
+            border-radius: 12px;
+            font-family: 'Poppins', sans-serif;
+            font-size: 16px;
+            cursor: pointer;
+            transition: transform 0.2s ease;
+        }
+
+        .notify-btn:hover {
+            transform: translateY(-2px);
+        }
+
+        .features {
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+            margin-top: 60px;
+        }
+
+        .feature {
+            text-align: center;
+            animation: fadeIn 0.5s ease forwards;
+            opacity: 0;
+        }
+
+        .feature:nth-child(1) { animation-delay: 0.2s; }
+        .feature:nth-child(2) { animation-delay: 0.4s; }
+        .feature:nth-child(3) { animation-delay: 0.6s; }
+
+        .feature i {
+            font-size: 24px;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+
+        .feature-text {
+            color: var(--color-800);
+            font-size: 14px;
+        }
+
+        .decoration {
+            position: absolute;
+            border-radius: 50%;
+            background: var(--primary-color);
+            opacity: 0.1;
+            z-index: 1;
+        }
+
+        .decoration-1 {
+            width: 300px;
+            height: 300px;
+            top: -150px;
+            right: -150px;
+        }
+
+        .decoration-2 {
+            width: 200px;
+            height: 200px;
+            bottom: -100px;
+            left: -100px;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .title {
+                font-size: 36px;
+            }
+
+            .notify-form {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .email-input {
+                width: 100%;
+                max-width: 300px;
+            }
+
+            .features {
+                flex-direction: column;
+                gap: 20px;
+            }
+        }
+    </style>
+</head>
+<!-- Additional SEO Content (hidden but good for search engines) -->
+<div style="display: none;">
+    <h2>Language Learning Made Simple</h2>
+    <p>Vocabh is the ultimate vocabulary learning app designed for language learners of all levels. Features include:</p>
+    <ul>
+        <li>Smart Flashcard System</li>
+        <li>Spaced Repetition Technology</li>
+        <li>Multiple Language Support</li>
+        <li>Progress Tracking</li>
+        <li>Customizable Learning Paths</li>
+        <li>Offline Learning Mode</li>
+        <li>Cross-Platform Synchronization</li>
+        <li>Audio Pronunciation</li>
+        <li>Personal Dictionary Building</li>
+    </ul>
+    <h3>Supported Languages</h3>
+    <p>English, Spanish, French, German, Italian, Portuguese, Russian, Chinese, Japanese, Korean, and more.</p>
+    <h3>Perfect For</h3>
+    <p>Students, Professionals, Travelers, Language Enthusiasts, Self-Learners, Academic Preparation, Business Communication</p>
+</div>
+<body>
+    <nav class="navbar">
+        <a href="#" class="logo">Vocabh</a>
+        <div class="social-links">
+            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <div class="decoration decoration-1"></div>
+        <div class="decoration decoration-2"></div>
+        
+        <div class="content-wrapper">
+            <h1 class="title">Master Languages with Vocabh</h1>
+            <p class="subtitle">
+                A smarter way to learn vocabulary is coming soon. Be the first to know when we launch 
+                and get exclusive early access.
+            </p>
+
+            <form class="notify-form">
+                <input type="email" 
+                       class="email-input" 
+                       placeholder="Enter your email"
+                       required>
+                <button type="submit" class="notify-btn">Notify Me</button>
+            </form>
+
+            <div class="features">
+                <div class="feature">
+                    <i class="fas fa-brain"></i>
+                    <p class="feature-text">Smart Learning System</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-mobile-alt"></i>
+                    <p class="feature-text">Available on iOS & Android</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-infinity"></i>
+                    <p class="feature-text">Unlimited Vocabulary</p>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html> 
