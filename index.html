@@ -34,10 +34,11 @@
         <meta property="twitter:image" content="https://vocabh.com/path-to-your-image.jpg">
     
         <!-- Favicon -->
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-        <link rel="manifest" href="/site.webmanifest">
+        <link rel="manifest" href="assets/favicon/site.webmanifest">
+        <link rel="shortcut icon" href="/assets/favicon/favicon.ico" type="image/x-icon">
+        <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#947CD6">
+        <meta name="msapplication-TileColor" content="#947CD6">
+        <meta name="theme-color" content="#ffffff">
     
         <!-- Canonical URL -->
         <link rel="canonical" href="https://vocabh.com/">
@@ -91,7 +92,7 @@
         }
 
         body {
-            font-family: 'Poppins', sans-serif;
+            font-family: 'Inter', sans-serif;
             background: linear-gradient(135deg, var(--color-50) 0%, white 100%);
             min-height: 100vh;
             display: flex;
@@ -100,43 +101,50 @@
         }
 
         .navbar {
-            padding: 20px;
+            padding: 32px 40px;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            max-width: 1200px;
+            max-width: 1400px;
             margin: 0 auto;
             width: 100%;
         }
 
         .logo {
-            font-size: 24px;
-            font-weight: 700;
-            color: var(--color-900);
             text-decoration: none;
+            display: inline-block;
+        }
+
+        .logo img {
+            height: 52px;
+            width: auto;
         }
 
         .social-links {
             display: flex;
-            gap: 15px;
+            gap: 20px;
         }
 
         .social-link {
-            width: 40px;
-            height: 40px;
-            border-radius: 20px;
+            width: 48px;
+            height: 48px;
+            border-radius: 24px;
             background: white;
             display: flex;
             align-items: center;
             justify-content: center;
             color: var(--primary-color);
             text-decoration: none;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            transition: transform 0.3s ease;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.08);
+            transition: all 0.3s ease;
+            font-size: 20px;
         }
 
         .social-link:hover {
             transform: translateY(-3px);
+            box-shadow: 0 4px 24px rgba(148,124,214,0.25);
+            background: var(--primary-color);
+            color: white;
         }
 
         .main-content {
@@ -144,76 +152,83 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            padding: 40px 20px;
+            padding: 60px 24px;
             position: relative;
-            min-height: calc(100vh - 80px);
+            min-height: calc(100vh - 116px);
         }
 
         .content-wrapper {
             text-align: center;
-            max-width: 600px;
+            max-width: 720px;
             width: 100%;
             z-index: 2;
-            padding: 0 20px;
         }
 
         .title {
-            font-size: 48px;
+            font-size: 72px;
+            line-height: 1.1;
             color: var(--color-900);
-            margin-bottom: 20px;
-            line-height: 1.2;
+            margin-bottom: 24px;
+            font-weight: 800;
+            letter-spacing: -2px;
         }
 
         .subtitle {
-            font-size: 18px;
+            font-size: 24px;
             color: var(--color-800);
-            margin-bottom: 40px;
+            margin-bottom: 48px;
             line-height: 1.6;
+            font-weight: 400;
         }
 
         .notify-form {
             display: flex;
-            gap: 10px;
-            margin-bottom: 20px;
+            gap: 16px;
+            margin-bottom: 64px;
             justify-content: center;
         }
 
         .email-input {
-            padding: 15px 25px;
+            padding: 20px 32px;
             border: 2px solid var(--color-200);
-            border-radius: 12px;
-            font-family: 'Poppins', sans-serif;
-            font-size: 16px;
-            width: 300px;
-            transition: border-color 0.3s ease;
+            border-radius: 16px;
+            font-family: 'Inter', sans-serif;
+            font-size: 18px;
+            width: 400px;
+            transition: all 0.3s ease;
+            background: white;
         }
 
         .email-input:focus {
             outline: none;
             border-color: var(--primary-color);
+            box-shadow: 0 0 0 4px var(--color-100);
         }
 
         .notify-btn {
-            padding: 15px 30px;
+            padding: 20px 40px;
             background: var(--primary-color);
             color: white;
             border: none;
-            border-radius: 12px;
-            font-family: 'Poppins', sans-serif;
-            font-size: 16px;
+            border-radius: 16px;
+            font-family: 'Inter', sans-serif;
+            font-size: 18px;
+            font-weight: 600;
             cursor: pointer;
-            transition: transform 0.2s ease;
+            transition: all 0.3s ease;
         }
 
         .notify-btn:hover {
             transform: translateY(-2px);
+            box-shadow: 0 4px 24px rgba(148,124,214,0.25);
+            background: var(--color-600);
         }
 
         .features {
             display: flex;
-            gap: 30px;
+            gap: 48px;
             justify-content: center;
-            margin-top: 60px;
+            margin-top: 32px;
         }
 
         .feature {
@@ -222,41 +237,58 @@
             opacity: 0;
         }
 
-        .feature:nth-child(1) { animation-delay: 0.2s; }
-        .feature:nth-child(2) { animation-delay: 0.4s; }
-        .feature:nth-child(3) { animation-delay: 0.6s; }
-
         .feature i {
-            font-size: 24px;
+            font-size: 32px;
             color: var(--primary-color);
-            margin-bottom: 10px;
+            margin-bottom: 16px;
         }
 
         .feature-text {
             color: var(--color-800);
-            font-size: 14px;
+            font-size: 18px;
+            font-weight: 500;
         }
 
-        .decoration {
-            position: absolute;
-            border-radius: 50%;
-            background: var(--primary-color);
-            opacity: 0.1;
-            z-index: 1;
-        }
+        @media (max-width: 768px) {
+            .navbar {
+                padding: 24px 20px;
+            }
 
-        .decoration-1 {
-            width: 300px;
-            height: 300px;
-            top: -150px;
-            right: -150px;
-        }
+            .logo img {
+                height: 40px;
+            }
 
-        .decoration-2 {
-            width: 200px;
-            height: 200px;
-            bottom: -100px;
-            left: -100px;
+            .title {
+                font-size: 48px;
+                padding: 0 20px;
+            }
+
+            .subtitle {
+                font-size: 20px;
+                padding: 0 20px;
+                margin-bottom: 40px;
+            }
+
+            .notify-form {
+                flex-direction: column;
+                padding: 0 20px;
+            }
+
+            .email-input {
+                width: 100%;
+                padding: 16px 24px;
+            }
+
+            .notify-btn {
+                width: 100%;
+                padding: 16px 24px;
+            }
+
+            .features {
+                flex-direction: column;
+                gap: 32px;
+                margin-top: 48px;
+            }
         }
 
         @keyframes fadeIn {
@@ -267,91 +299,6 @@
             to {
                 opacity: 1;
                 transform: translateY(0);
-            }
-        }
-
-        @media (max-width: 768px) {
-            .navbar {
-                padding: 15px 20px;
-            }
-
-            .title {
-                font-size: 32px;
-                padding: 0 10px;
-            }
-
-            .subtitle {
-                font-size: 16px;
-                padding: 0 10px;
-                margin-bottom: 30px;
-            }
-
-            .notify-form {
-                flex-direction: column;
-                align-items: center;
-                width: 100%;
-                gap: 15px;
-            }
-
-            .email-input {
-                width: 100%;
-                max-width: 100%;
-                padding: 12px 20px;
-            }
-
-            .notify-btn {
-                width: 100%;
-                padding: 12px 20px;
-            }
-
-            .features {
-                flex-direction: column;
-                gap: 25px;
-                margin-top: 40px;
-                padding: 0 20px;
-            }
-
-            .feature {
-                opacity: 1;
-                transform: none;
-                animation: none;
-            }
-
-            .decoration {
-                display: none;
-            }
-        }
-
-        @media (max-width: 380px) {
-            .title {
-                font-size: 28px;
-            }
-
-            .social-links {
-                gap: 10px;
-            }
-
-            .social-link {
-                width: 35px;
-                height: 35px;
-            }
-        }
-
-        @media (max-height: 600px) and (orientation: landscape) {
-            .main-content {
-                padding: 20px;
-            }
-
-            .features {
-                flex-direction: row;
-                flex-wrap: wrap;
-                justify-content: center;
-                margin-top: 30px;
-            }
-
-            .feature {
-                flex: 0 0 auto;
-                width: calc(33.33% - 20px);
             }
         }
     </style>
@@ -378,10 +325,12 @@
 </div>
 <body>
     <nav class="navbar">
-        <a href="#" class="logo">Vocabh</a>
+        <a href="#" class="logo">
+            <img src="assets/images/logo-small.png"Vocabh" width="160" height="52">
+        </a>
         <div class="social-links">
-            <a href="https://x.com/vocabh" class="social-link"><i class="fab fa-twitter"></i></a>
-            <a href="https://instagram.com/vocabh" class="social-link"><i class="fab fa-instagram"></i></a>
+            <a href="https://x.com/vocabh" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com/vocabh" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
         </div>
     </nav>
 
@@ -390,32 +339,32 @@
         <div class="decoration decoration-2"></div>
         
         <div class="content-wrapper">   
-            <h1 class="title">Master Languages with Vocabh</h1>
+            <h1 class="title">Master Languages<br>with Vocabh</h1>
             <p class="subtitle">
-                A smarter way to learn vocabulary is coming soon. Be the first to know when we launch 
-                and get exclusive early access.
+                A smarter way to learn vocabulary is coming soon.<br>
+                Be the first to know when we launch.
             </p>
 
-            <form class="notify-form">
+            <form class="notify-form" id="notify-form">
                 <input type="email" 
                        class="email-input" 
-                       placeholder="Enter your email"
+                       placeholder="Enter your email address"
                        required>
-                <button type="submit" class="notify-btn">Notify Me</button>
+                <button type="submit" class="notify-btn">Get Early Access</button>
             </form>
 
             <div class="features">
                 <div class="feature">
                     <i class="fas fa-brain"></i>
-                    <p class="feature-text">Smart Learning System</p>
+                    <p class="feature-text">AI-Powered Learning</p>
                 </div>
                 <div class="feature">
                     <i class="fas fa-mobile-alt"></i>
-                    <p class="feature-text">Available on iOS & Android</p>
+                    <p class="feature-text">iOS & Android Apps</p>
                 </div>
                 <div class="feature">
                     <i class="fas fa-infinity"></i>
-                    <p class="feature-text">Unlimited Vocabulary</p>
+                    <p class="feature-text">20+ Languages</p>
                 </div>
             </div>
         </div>
